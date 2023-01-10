@@ -1,2 +1,2 @@
-Check out the minimal portfolio at luthfiraditya.github.io
+Check out the minimal portfolio at https://luthfiraditya.github.io/
 
