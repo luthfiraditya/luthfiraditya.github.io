@@ -8,8 +8,9 @@
 [![Read on Medium](https://img.shields.io/badge/GitHub-Read_on_Medium-white?logo=medium)](https://luthfirdty.medium.com/olist-e-commerce-business-performance-5ce0b3dc66fb)
 
 
-<div style="text-align: justify">The release of Google's BERT is described as the beginning of a new era in NLP. In this notebook I'll use the HuggingFace's transformers library to fine-tune pretrained BERT model for a classification task. Then I will compare BERT's performance with a baseline model, in which I use a TF-IDF vectorizer and a Naive Bayes classifier. The transformers library helps us quickly and efficiently fine-tune the state-of-the-art BERT model and yield an accuracy rate 10% higher than the baseline model.</div>
-
+<div style="text-align: justify">This project is a pilot project during internship. I built recommender systems for recommending products to user using Model-based recommendation system. The goal of this project is to make a recommendation system model that is more accurate than the previous model. The model achieve the best performance with SVD++ where this model gets an RMSE score of 0.844 and MAE 0.384. I also use the mlflow tool to do experiment tracking.
+</div>
+<br>
 <center><img src="images/Recsys.png"/></center>
 
 ---
@@ -18,37 +19,69 @@
 [![Open Notebook](https://img.shields.io/badge/Heroku-Open_Web_App-purple?logo=heroku)](projects/detect-food-trends-facebook.html)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Boston-Housing-Prediction-with-deployment)
 
-<div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
-<br>
+<div style="text-align: justify">This project was started as a motivation for learning Machine Learning Algorithms and to learn the different data preprocessing techniques and implement the concept of Homodescascity, Multicollinearity & Error terms distribution during data exploration. I also deploy this project in heroku. This model get R2 score of 73% and RMSE of 5.09.
+</div>
 <center><img src="images/BostonHouse.png"></center>
-<br>
+
 
 ---
 ### Location Recommendation for Retail
 
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-spam-nlp.html)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/detect-spam-messages-nlp/blob/master/detect-spam-nlp.ipynb)
+[![Open Research Poster](https://img.shields.io/badge/PDF-Open_Final_Report-red?logo=adobe-acrobat-reader&logoColor=red)](https://docs.google.com/document/d/1RF5hePterte23m-4obD89ax8giUqsfgE/edit?usp=sharing&ouid=109361563889763484237&rtpof=true&sd=true)
 
-<div style="text-align: justify">In order to predict whether a message is spam, first I vectorized text messages into a format that machine learning algorithms can understand using Bag-of-Word and TF-IDF. Then I trained a machine learning model to learn to discriminate between normal and spam messages. Finally, with the trained model, I classified unlabel messages into normal or spam.</div>
+
+<div style="text-align: justify">The purpose of this project is to provide location recommendations for retailers who want to open offline stores. This project used to build the startup for the final project called Map.it and succeeded in becoming the five best final projects during MBKM event.</div>
 <br>
 <center><img src="images/locationintel.png"/></center>
 <br>
 
 ---
+### Herd Immunity Prediction
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Herd-Immunity-Prediction)
+
+<div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
+<br>
+<center><img src="images/Herdimmunity.png"></center>
+<br>
+
+---
 ### Market Basket Analysis
 
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-spam-nlp.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/detect-spam-messages-nlp/blob/master/detect-spam-nlp.ipynb)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Market-Basket-Analysis)
 
-<div style="text-align: justify">In order to predict whether a message is spam, first I vectorized text messages into a format that machine learning algorithms can understand using Bag-of-Word and TF-IDF. Then I trained a machine learning model to learn to discriminate between normal and spam messages. Finally, with the trained model, I classified unlabel messages into normal or spam.</div>
+<div style="text-align: justify">The objective of this project is to analyze the 3 million grocery orders from more than 200,000 Instacart users and predict which previously purchased item will be in user's next order. Customer segmentation and affinity analysis are done to study customer purchase patterns and for better product marketing and cross-selling. achieved the best performance using the XGBoost model with an AUC score of 0.83, an accuracy of 0.74 and an F1-score of 0.36.</div>
 <br>
-<center><img src="images/.png"/></center>
+<center><img src="images/marketbasket.png"></center>
+<br>
+
+---
+
+### Song Clustering using K-Means
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Song-Clustering-Using-K-Means)
+
+<div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
+<br>
+<center><img src="images/songclustering.png"></center>
+<br>
+
+---
+
+### Attrition/Turnover Prediction
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Boston-Housing-Prediction-with-deployment)
+
+<div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
+<br>
+<center><img src="images/w.png"></center>
 <br>
 
 ---
 ## Data Analyst
 
-### **Olist E-Commerce Business Performance**
+### Olist E-Commerce Business Performance
 
 [![Read on Medium](https://img.shields.io/badge/GitHub-Read_on_Medium-white?logo=medium)](https://luthfirdty.medium.com/olist-e-commerce-business-performance-5ce0b3dc66fb)
 [![Open Dashboard](https://img.shields.io/badge/Tableau-Open_Dashboard-orange?logo=tableau)](https://github.com/luthfiraditya/Olist-E-Commerce-Business-Performance)
@@ -61,7 +94,7 @@
 <br>
 
 ---
-### **Uber vs Green Cabs Trip in New York City - an Analysis**
+### Uber vs Green Cabs Trip in New York City - an Analysis
 
 [![Open Dashboard](https://img.shields.io/badge/Tableau-Open_Dashboard-orange?logo=tableau)](https://public.tableau.com/app/profile/luthfi.raditya.meza/viz/UbervsGreenCabsTripinNewYorkCity/Dashboard1)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Uber-vs-Green-Cabs-Trip-in-New-York-City)
@@ -84,28 +117,6 @@
 <center><img src="images/SuperstoreDashboard.png"/></center>
 <br>
 
----
-### Business Analytics Conference 2018: How is NYC's Government Using Money?
-
-[![Open Research Poster](https://img.shields.io/badge/PDF-Open_Research_Poster-blue?logo=adobe-acrobat-reader&logoColor=white)](pdf/bac2018.pdf)
-
-<div style="text-align: justify">In three-month research and a two-day hackathon, I led a team of four students to discover insights from 6 million records of NYC and Boston government spending data sets and won runner-up prize for the best research poster out of 18 participating colleges.</div>
-<br>
-<center><img src="images/bac2018.JPG"/></center>
-<br>
 
 ---
-## Filmed by me
-
-[![View My Films](https://img.shields.io/badge/YouTube-View_My_Films-grey?logo=youtube&labelColor=FF0000)](https://www.youtube.com/watch?v=vfZwdEWgUPE)
-
-<div style="text-align: justify">Besides Data Science, I also have a great passion for photography and videography. Below is a list of films I documented to retain beautiful memories of places I traveled to and amazing people I met on the way.</div>
-<br>
-
-- [Ada Von Weiss - You Regret (Winter at Niagara)](https://www.youtube.com/watch?v=-5esqvmPnHI)
-- [The Weight We Carry is Love - TORONTO](https://www.youtube.com/watch?v=vfZwdEWgUPE)
-- [In America - Boston 2017](https://www.youtube.com/watch?v=YdXufiebgyc)
-- [In America - We Call This Place Our Home (Massachusetts)](https://www.youtube.com/watch?v=jzfcM_iO0FU)
-
----
-<center>© 2020 Khanh Tran. Powered by Jekyll and the Minimal Theme.</center>
+<center>© 2022 Luthfi Raditya. Powered by Jekyll and the Minimal Theme.</center>
