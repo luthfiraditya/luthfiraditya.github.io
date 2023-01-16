@@ -4,7 +4,7 @@
 
 ### Recommender Systems on E-commerce
 
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfi)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Ecommerce-Recommendation-System)
 [![Read on Medium](https://img.shields.io/badge/GitHub-Read_on_Medium-white?logo=medium)](https://luthfirdty.medium.com/olist-e-commerce-business-performance-5ce0b3dc66fb)
 
 
@@ -41,7 +41,8 @@
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Herd-Immunity-Prediction)
 
-<div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
+<div style="text-align: justify">This project aims to predict when Indonesia will reach 60-85% herd immunity with COVID-19 vaccinations. Performing time series analysis and modeling with polynomial models. Using degree=3 as the best degree that gets a score of r2=0.963.
+</div>
 <br>
 <center><img src="images/Herdimmunity.png"></center>
 <br>
@@ -62,7 +63,7 @@
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Song-Clustering-Using-K-Means)
 
-<div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
+<div style="text-align: justify">Using song data in the form of components in the song such as acousticness, energy, instrumentalness etc. Reduce data from 13 data variables into 8 components and can be used in K-Means modeling K-Means++. clustering songs into 8 n_clusters.</div>
 <br>
 <center><img src="images/songclustering.png"></center>
 <br>
@@ -75,7 +76,7 @@
 
 <div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
 <br>
-<center><img src="images/w.png"></center>
+<center><img src="images/atr.png"></center>
 <br>
 
 ---
@@ -88,7 +89,7 @@
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Olist-E-Commerce-Business-Performance)
 
 
-<div style="text-align: justify">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+<div style="text-align: justify">In this proect we have some objective to do about the bussiness performance inside Olist. I do analysis and visualization using tableau. This analysis and visualization focuses on orders and transactions that occurred at olist during 2017 and 2018.</div>
 <br>
 <center><img src="images/sold_dash.png"/></center>
 <br>
@@ -101,7 +102,11 @@
 
 
 
-<div style="text-align: justify">I performed comprehensive EDA to understand important variables, handled missing values, outliers, performed feature engineering, and ensembled machine learning models to predict house prices. My best model had Mean Absolute Error (MAE) of 12293.919, ranking <b>95/15502</b>, approximately <b>top 0.6%</b> in the Kaggle leaderboard.</div>
+<div style="text-align: justify">Analyzing the performance of Green Cabs and Uber Taxi through visual analysis of passenger trips using Green Cabs and Uber Taxi from January to June in 2015 in the New York City area. Broadly speaking, there are two questions related to the research conducted:
+
+<li>How do Green Cabs and Uber rides compare regionally in neighborhoods outside of New York City?</li>
+<li>Do customer preferences change according to the time of day (night/day or weekend/weekday)?</li>
+</div>
 <br>
 <center><img src="images/ubergreendash.png"/></center>
 <br>
@@ -112,7 +117,8 @@
 
 [![Open Dashboard](https://img.shields.io/badge/Tableau-Open_Dashboard-orange?logo=tableau)](https://public.tableau.com/app/profile/luthfi.raditya.meza/viz/SuperstoreSalesDashboard_16463843679940/SuperstoreDashboard)
 
-<div style="text-align: justify">In this project I am going to perform comprehensive EDA on the breast cancer dataset, then transform the data using Principal Components Analysis (PCA) and use Support Vector Machine (SVM) model to predict whether a patient has breast cancer.</div>
+<div style="text-align: justify">
+Created a superstore dashboard showing the sales & profit by location, segment analysis, category analysis, shipping analysis in various years of a superstore. In this project also, I have made a interactive Tableau Sales Dashboard on Global_super_store sales data and find some insights from the data. </div>
 <br>
 <center><img src="images/SuperstoreDashboard.png"/></center>
 <br>
