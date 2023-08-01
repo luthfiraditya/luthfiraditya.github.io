@@ -2,6 +2,19 @@
 ---
 ## Data Science
 
+### Thesis : Session-based Recommendation System using Gated Graph Neural Network and Attention Mechanism on E-commerce Dataset
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Session-based-Recommendation-System)
+
+
+<div style="text-align: justify">This project is a pilot project during internship. I built recommender systems for recommending products to user using Model-based recommendation system. The goal of this project is to make a recommendation system model that is more accurate than the previous model. <b>The model achieve the best performance with SVD++ where this model gets an RMSE score of 0.844 and MAE 0.384. I also use the mlflow tool to do experiment tracking.</b>
+</div>
+<br>
+<center><img src="images/Recsys.png"/></center>
+
+---
+---
+
 ### Recommender Systems on E-commerce
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Ecommerce-Recommendation-System)
