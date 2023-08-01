@@ -24,9 +24,10 @@ The research encompasses several stages, including data pre-processing, session 
 <div style="text-align: justify">
 In this project, I am exploring document classification using LayoutLM, a pre-trained model for document image understanding. The goal of this project is to provide an overview of how to use LayoutLM for document classification, including how to prepare the data, fine-tune LayoutLMForSequenceClassification the pre-trained model, and evaluate its performance on RVL-CDIP dataset. By the end of this project, we should have a good understanding of how to use LayoutLM for document classification and be able to apply these techniques to document classification tasks.
 
-* Original LayoutLM paper: https://arxiv.org/abs/1912.13318
-* LayoutLM docs in the Transformers library: https://huggingface.co/transformers/model_doc/layoutlm.html
+Original LayoutLM paper: https://arxiv.org/abs/1912.13318
 
+LayoutLM docs in the Transformers library: https://huggingface.co/transformers/model_doc/layoutlm.html
+</div>
 <br>
 <center><img src="images/doc_class.png"/></center>
 
