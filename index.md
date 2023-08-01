@@ -14,14 +14,29 @@ The research encompasses several stages, including data pre-processing, session 
 <br>
 <center><img src="images/metode_penelitian.png"/></center>
 
+---
+
+### Document Classification using LayoutLM
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/LayoutLM-Document-Classification)
+
+
+<div style="text-align: justify">
+In this project, I am exploring document classification using LayoutLM, a pre-trained model for document image understanding. The goal of this project is to provide an overview of how to use LayoutLM for document classification, including how to prepare the data, fine-tune LayoutLMForSequenceClassification the pre-trained model, and evaluate its performance on RVL-CDIP dataset. By the end of this project, we should have a good understanding of how to use LayoutLM for document classification and be able to apply these techniques to document classification tasks.
+
+* Original LayoutLM paper: https://arxiv.org/abs/1912.13318
+* LayoutLM docs in the Transformers library: https://huggingface.co/transformers/model_doc/layoutlm.html
+
+<br>
+<center><img src="images/doc_class.png"/></center>
+
+---
 
 ---
 
 ### Recommender Systems on E-commerce
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/Ecommerce-Recommendation-System)
-[![Read on Medium](https://img.shields.io/badge/GitHub-Read_on_Medium-white?logo=medium)](https://luthfirdty.medium.com/olist-e-commerce-business-performance-5ce0b3dc66fb)
-
 
 <div style="text-align: justify">This project is a pilot project during internship. I built recommender systems for recommending products to user using Model-based recommendation system. The goal of this project is to make a recommendation system model that is more accurate than the previous model. <b>The model achieve the best performance with SVD++ where this model gets an RMSE score of 0.844 and MAE 0.384. I also use the mlflow tool to do experiment tracking.</b>
 </div>
