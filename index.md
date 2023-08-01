@@ -30,7 +30,6 @@ In this project, I am exploring document classification using LayoutLM, a pre-tr
 <br>
 <center><img src="images/doc_class.png"/></center>
 
----
 
 ---
 
