@@ -16,6 +16,27 @@ The research encompasses several stages, including data pre-processing, session 
 
 ---
 
+### Named Entity Recognition (NER) using LayoutLM
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/LayoutLM-Document-Classification)
+
+
+<div style="text-align: justify">
+Working on a project that involves utilizing LayoutLM, a multimodal Transformer model designed for document image understanding and information extraction. This technology has promising applications in text comprehension and receipt understanding. Named Entity Recognition, a critical task, involves the identification and categorization of entities like individual names, organizations, locations, dates, and more within a given text. The innovative aspect of LayoutLM lies in its extension of this task to encompass the visual layout of text. This includes factors such as the positioning of text, font styles, and formatting details. Through my project, I am creating a system that can automatically extract and categorize named entities present in various documents. By combining the capabilities of language comprehension with visual layout analysis, I aim to achieve a more accurate identification of entities. This approach becomes particularly valuable in cases where conventional NER methods face challenges due to the diverse formats and structures of documents.
+
+
+Original LayoutLM paper: https://arxiv.org/abs/1912.13318
+
+LayoutLM docs in the Transformers library: https://huggingface.co/transformers/model_doc/layoutlm.html
+</div>
+<br>
+<center><img src="images/schema.jpg"/></center>
+
+
+---
+
+---
+
 ### Document Classification using LayoutLM
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/luthfiraditya/LayoutLM-Document-Classification)
