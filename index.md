@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Portofolio
 ---
 ## Data Science
