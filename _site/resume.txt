@@ -1,0 +1,123 @@
+Luthfi Raditya Meza
+Bekasi, Jawa Barat | +6281316753195 | luthfirdty@gmail.com | Portofolio| LinkedIn | Medium
+EDUCATION
+UNIVERSITAS AIRLANGGA Surabaya
+Bachelor of Information System Aug 2019 – Aug 2023
+Cumulative GPA: 3.53/4.0
+Thesis : Session-based Recommendation System using Gated Graph Neural Network and Attention Mechanism on E-commerce
+WORK EXPERIENCE (3 Years of Experience)
+Insignia Jakarta
+Mid. Data Engineer Apr 2025– Now
+●
+Spearheaded the end-to-end modernization of a legacy big data ecosystem to a scalable AWS cloud platform, enhancing
+data accessibility for enterprise-wide analytics and significantly reducing operational overhead.
+●
+Led multiple projects related to the client Unified Data Platform, including data standardization, metadata
+centralization, cross-domain ingestion pipelines, and a unified schema framework for analytics and AI teams.
+●
+Architected and deployed a data lakehouse solution using Apache Iceberg on S3, establishing a transactional, governed
+data foundation that supports both business intelligence and advanced analytics.
+’
+●
+Created a modern, scalable data lake specifically designed to support network anomaly detection, including structured
+log storage, standardized schemas, and optimized access patterns for machine learning workloads.
+●
+Engineered robust, event-driven ETL/ELT pipelines using AWS Glue, Lambda, and Airflow to ingest and process
+complex data from diverse sources, including SQL, NoSQL, HDFS, and real-time network feeds.
+●
+Delivered a governed, Medallion-architecture data repository that serves as the single source of truth for business
+intelligence (Quicksight), ad-hoc querying (Athena), and critical data science initiatives, including network anomaly
+detection and AI-powered chatbots.
+●
+Established a robust data governance and operations framework using AWS Lake Formation and CloudWatch,
+delivering a centralized data catalog, data lineage, and fine-grained access controls for all enterprise data assets.
+●
+Engineered a comprehensive ingestion framework using AWS Glue, DMS, and Kinesis to unify batch, streaming, and
+change-data-capture (CDC) from diverse enterprise sources, including Oracle, SQL Server, and SFTP .
+●
+Established a mature CI/CD pipeline with GitHub Actions for automated Glue script deployments and implemented
+rigorous database performance tuning, which improved development velocity and reduced data processing times.
+Tech: AWS (Glue, S3, Athena, Lake Formation, Lambda), Airflow, Iceberg, Python, GitHub Actions, Snowflake, Databricks
+Skills: ETL/ELT, Lakehouse Architecture, CDC, Data Governance, Orchestration, Cloud Engineering
+NTX Solusi Teknologi Jakarta
+Data Engineer Dec 2023 – Mar 2025
+●
+Architected and optimized ETL/CDC pipelines and data lake implementation using MinIO, while orchestrating
+workflows with Prefect to ensure smooth and scalable data processes.
+●
+Enhanced data reliability by integrating validation tools like Great Expectations, detecting and resolving 95% of data
+anomalies before ingestion.
+●
+Designed and maintained normalized and denormalized data models in PostgreSQL and MongoDB to support
+analytical dashboards and machine learning workflows.
+●
+●
+●
+Implemented a scalable data lake solution, ensuring efficient storage and retrieval of structured and unstructured data.
+Improved search relevance by 35% by developing and deploying a high-performance vector search system using HNSW .
+Achieved 95% accuracy in Named Entity Recognition (NER) models for automated report generation through MLOps
+practices, including experiment tracking, model registry, and monitoring.
+●
+Launched a production-grade Large Language Model (LLM) solution that reduced client report creation time by 90%,
+enhancing operational efficiency.
+●
+Boosted system reliability by implementing CI/CD pipelines and introducing monitoring solutions via Prometheus and
+Grafana, achieving 90% uptime.
+●
+Established standardized data engineering workflows and documentation, enhancing team productivity by 40% and
+cutting project delays by 25%.
+●
+Implemented data catalog solutions such as Amundsen and DataHub to enhance data discovery, reducing data retrieval
+times by 50% and increasing data compliance by 35%.
+●
+Fostered a culture of continuous innovation by experimenting with emerging technologies, leading to a 20% annual
+improvement in operational efficiency and a 60% rise in tech adoption.
+Tech Stack : Prefect, Postgresql, MongoDB, OpenRefine, MinIO, Docker, FastAPI, MLFlow, Airbyte, Amundsen, DSPy,
+Langchain, GreatExpectation,, LakeFS, Redis, ElasticSearch
+Skills: ETL, Change Data Capture, Data Orchestration, Data Warehousing, Data Governance, AI, MLOps, LLM
+PERGA
+Hamburg, Germany (Remote)
+AI Engineer Mar 2023 – Jun 2023
+●
+Developed solutions for Named Entity Recognition (NER) and document classification using the concepts from the
+LayoutLM paper, achieving an impressive accuracy rate of 92% at the first checkpoint.
+●
+Devised and implemented a rule-based approach for Named Entity Recognition, enhancing the precision and efficiency of
+entity recognition tasks.
+●
+Conducted extensive research on document-based AI models for 2 AI models on apps, generating valuable insights that
+contributed to the company's advancements in this domain.
+●
+●
+●
+Configured Label Studio to streamline data labeling processes and successfully labeled 200+ company document data.
+Spearheaded the creation of 3 main AI features for the application, significantly elevating its overall functionality.
+Collaborated with universities on the preparation of review papers, fostering productive partnerships and knowledge
+exchange in model development. Engaged in 2 model feature discussions with universities.
+Tech Stack : Python, PyTorch, Label Studio
+Skills: Debugging, Production Ready, Data Cleaning, Label Studio, Named Entity Recognition, NLP
+SG-EDTS Jakarta
+Data Science and Analytics Intern Jan 2022 – Apr 2022
+●
+●
+●
+Completed 4 data science & analytics courses and gained hands-on experience.
+Researched state-of-the-art machine learning algorithms from research papers.
+Designed, developed, and implemented a client (e-commerce) recommendation system model using the SVD++ model,
+achieving an MSE score of 0.844 and an MAE score of 0.384.
+●
+Constructed and fine-tuned 3 business performance dashboards with scope analysis using Tableau.
+Tech Stack : Python, Tableau, BigQuery, Excel, MLFlow
+Skills: Recommendation System, Research, Machine Learning, Exploratory Data Analysis
+CERTIFICATION
+AWS Certified Data Engineer Issued Aug 25 - Expires Aug 28
+AWS(Amazon Web Service)
+TECHNICAL SKILLS
+Cloud & Data: AWS (Glue, Redshift, Athena, S3, Lambda, EventBridge), Snowflake, Databricks, Iceberg, Delta Lake, DuckDB
+Pipelines & Orchestration: Airflow, Prefect, Step Functions
+Databases: PostgreSQL, MongoDB, Redis
+ML & AI: MLFlow, TensorFlow, PyTorch, LangChain, DSPy
+Tools: Git, Docker, Elasticsearch, Power BI, Tableau
+ADDITIONAL
+Knowledge of : Machine Learning, NLP, Recommendation Systems, MLOps, Time Series, Data Visualization
+Awards: Top 5 AI Startup Final Project by PT. Orbit Future Academy.
