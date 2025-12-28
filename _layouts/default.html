@@ -14,28 +14,64 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
-      </header>
-      <section>
-
       {{ content }}
-
-      </section>
     </div>
+
+    <script>
+      // Tech Animals - Click to expand/collapse
+      const techAnimals = document.querySelector('.tech-animals');
+      const dockerWhale = document.querySelector('.docker-whale');
+      const animalIcons = document.querySelectorAll('.animal-icon.hidden');
+      let isExpanded = false;
+
+      dockerWhale.addEventListener('click', function(e) {
+        e.stopPropagation();
+        isExpanded = !isExpanded;
+
+        if (isExpanded) {
+          techAnimals.classList.add('expanded');
+          animalIcons.forEach((icon, index) => {
+            setTimeout(() => {
+              icon.classList.remove('hidden');
+            }, index * 100);
+          });
+        } else {
+          techAnimals.classList.remove('expanded');
+          animalIcons.forEach((icon) => {
+            icon.classList.add('hidden');
+          });
+        }
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', function(e) {
+        if (isExpanded && !techAnimals.contains(e.target)) {
+          isExpanded = false;
+          techAnimals.classList.remove('expanded');
+          animalIcons.forEach((icon) => {
+            icon.classList.add('hidden');
+          });
+        }
+      });
+
+      // Docker Whale scroll animation
+      let lastScrollTop = 0;
+
+      window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollPercent = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+        // Move whale up/down based on scroll direction
+        if (scrollTop > lastScrollTop) {
+          // Scrolling down - whale swims down
+          dockerWhale.style.transform = `translateY(${scrollPercent * 0.5}px) rotate(5deg) scaleX(-1)`;
+        } else {
+          // Scrolling up - whale swims up
+          dockerWhale.style.transform = `translateY(${scrollPercent * 0.5}px) rotate(-5deg) scaleX(-1)`;
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
+    </script>
   </body>
 </html>

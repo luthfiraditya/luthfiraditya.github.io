@@ -47,6 +47,180 @@ body {
   line-height: 1.7;
 }
 
+/* Override theme styles - Remove sidebar layout */
+.wrapper {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 2rem !important;
+}
+
+header {
+  display: none !important;
+}
+
+section {
+  width: 100% !important;
+  float: none !important;
+}
+
+/* Tech Animals Container */
+.tech-animals {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Animal Icons */
+.animal-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  pointer-events: all;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  opacity: 0.9;
+}
+
+.animal-icon:hover {
+  transform: scale(1.2) !important;
+  opacity: 1;
+}
+
+.animal-icon svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 10px rgba(0, 217, 255, 0.5));
+  transition: all 0.3s ease;
+}
+
+.animal-icon.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+}
+
+/* Tooltip */
+.animal-icon .tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: var(--primary);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--primary);
+}
+
+.animal-icon:hover .tooltip {
+  opacity: 1;
+}
+
+/* Docker Whale - Main clickable one */
+.docker-whale {
+  bottom: 0;
+  right: 0;
+  animation: whale-bob 3s ease-in-out infinite;
+}
+
+.docker-whale svg {
+  color: var(--primary);
+}
+
+/* Python Snake */
+.python-snake {
+  bottom: 0;
+  right: 0;
+}
+
+.python-snake svg {
+  color: #FFD43B;
+}
+
+/* PostgreSQL Elephant */
+.postgres-elephant {
+  bottom: 0;
+  right: 0;
+}
+
+.postgres-elephant svg {
+  color: #336791;
+}
+
+/* Hadoop Elephant */
+.hadoop-elephant {
+  bottom: 0;
+  right: 0;
+}
+
+.hadoop-elephant svg {
+  color: #FFD93D;
+}
+
+/* MongoDB */
+.mongo-leaf {
+  bottom: 0;
+  right: 0;
+}
+
+.mongo-leaf svg {
+  color: #4DB33D;
+}
+
+/* Redis */
+.redis-icon {
+  bottom: 0;
+  right: 0;
+}
+
+.redis-icon svg {
+  color: #DC382D;
+}
+
+/* Expanded state */
+.tech-animals.expanded .python-snake {
+  bottom: 70px;
+  right: 10px;
+}
+
+.tech-animals.expanded .postgres-elephant {
+  bottom: 130px;
+  right: 5px;
+}
+
+.tech-animals.expanded .hadoop-elephant {
+  bottom: 50px;
+  right: 70px;
+}
+
+.tech-animals.expanded .mongo-leaf {
+  bottom: 110px;
+  right: 65px;
+}
+
+.tech-animals.expanded .redis-icon {
+  bottom: 10px;
+  right: 65px;
+}
+
+@keyframes whale-bob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
 /* Animations */
 @keyframes glitch {
   0%, 90%, 100% {
@@ -90,6 +264,65 @@ body {
   border: 1px solid rgba(0, 217, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 60px rgba(0, 217, 255, 0.1);
   animation: glow-pulse 3s ease-in-out infinite;
+  position: relative;
+}
+
+/* Floating Particles */
+.floating-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--primary);
+  animation: float-particle 6s infinite;
+}
+
+.particle:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+
+.particle:nth-child(2) {
+  left: 30%;
+  animation-delay: 1s;
+  animation-duration: 6s;
+}
+
+.particle:nth-child(3) {
+  left: 50%;
+  animation-delay: 2s;
+  animation-duration: 7s;
+}
+
+.particle:nth-child(4) {
+  left: 70%;
+  animation-delay: 1.5s;
+  animation-duration: 5.5s;
+}
+
+.particle:nth-child(5) {
+  left: 85%;
+  animation-delay: 3s;
+  animation-duration: 6.5s;
+}
+
+.particle:nth-child(6) {
+  left: 95%;
+  animation-delay: 0.5s;
+  animation-duration: 7.5s;
 }
 
 .terminal-header {
@@ -99,6 +332,34 @@ body {
   align-items: center;
   gap: 1rem;
   border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+/* Sparkles */
+.sparkles {
+  display: flex;
+  gap: 0.3rem;
+  margin-left: auto;
+}
+
+.sparkle {
+  font-size: 0.8rem;
+  display: inline-block;
+  animation: sparkle-twinkle 2s infinite;
+  filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.8));
+}
+
+.sparkle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.sparkle:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.sparkle:nth-child(3) {
+  animation-delay: 1.4s;
 }
 
 .terminal-dots {
@@ -139,6 +400,8 @@ body {
 .hero-content {
   padding: 2.5rem 2rem 2rem;
   font-family: 'JetBrains Mono', monospace;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-prefix {
@@ -173,6 +436,31 @@ body {
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
+}
+
+@keyframes float-particle {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100px) translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkle-twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
 }
 
 .output-section {

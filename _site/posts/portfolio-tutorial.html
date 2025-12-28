@@ -30,22 +30,6 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1><a href="http://0.0.0.0:4000/"><p align="center"> Luthfi Raditya </p></a></h1>
-        
-        
-          <img src="/images/ProfilePicture.png?raw=true" alt="Logo" />
-        
-
-        <p><p align="center"> <a href="https://drive.google.com/file/d/1Qm_ojbWwhTosNVnGfmvEVRUBqxOsDOzo/view?usp=sharing" target="_blank">Resume</a> | <a href="https://www.linkedin.com/in/luthfiraditya/" target="_blank">LinkedIn</a> | <a href="https://github.com/luthfiraditya" target="_blank">GitHub</a> | <a href="https://medium.com/@luthfirdty" target="_blank">Medium</a>
-</p>
-<p align="justify"> AWS Certified Data Engineer specializing in cloud data platforms, ETL/ELT pipelines, and modern lakehouse architectures. I build scalable data infrastructure that transforms raw data into business intelligence and AI-ready datasets.
-<br><br> I share insights about data engineering, cloud architecture, and analytics. Let's connect and discuss building data-driven solutions! <br><br> </p></p>
-
-        
-      </header>
-      <section>
-
       <h1 id="create-a-minimalism-github-page-for-your-data-science-portfolio-in-30-minutes">Create a Minimalism GitHub Page for Your Data Science Portfolio in 30 Minutes</h1>
 
 <p><a href="https://chriskhanhtran.github.io/"><img src="https://img.shields.io/badge/Portfolio-chriskhanhtran.github.io-blue?logo=GitHub" alt="Portfolio" /></a></p>
@@ -228,8 +212,63 @@
 <p>Thank you so much for staying with me to this point of my first tutorial. Don’t hesitate to reach out to me if you’ve got any questions. Please connect with me on LinkedIn and share with me your Data Science portfolio.
 <a href="https://www.linkedin.com/in/chriskhanhtran/"><img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20Me-blue?logo=LinkedIn&amp;style=social" alt="" /></a></p>
 
-
-      </section>
     </div>
+
+    <script>
+      // Tech Animals - Click to expand/collapse
+      const techAnimals = document.querySelector('.tech-animals');
+      const dockerWhale = document.querySelector('.docker-whale');
+      const animalIcons = document.querySelectorAll('.animal-icon.hidden');
+      let isExpanded = false;
+
+      dockerWhale.addEventListener('click', function(e) {
+        e.stopPropagation();
+        isExpanded = !isExpanded;
+
+        if (isExpanded) {
+          techAnimals.classList.add('expanded');
+          animalIcons.forEach((icon, index) => {
+            setTimeout(() => {
+              icon.classList.remove('hidden');
+            }, index * 100);
+          });
+        } else {
+          techAnimals.classList.remove('expanded');
+          animalIcons.forEach((icon) => {
+            icon.classList.add('hidden');
+          });
+        }
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', function(e) {
+        if (isExpanded && !techAnimals.contains(e.target)) {
+          isExpanded = false;
+          techAnimals.classList.remove('expanded');
+          animalIcons.forEach((icon) => {
+            icon.classList.add('hidden');
+          });
+        }
+      });
+
+      // Docker Whale scroll animation
+      let lastScrollTop = 0;
+
+      window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollPercent = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+        // Move whale up/down based on scroll direction
+        if (scrollTop > lastScrollTop) {
+          // Scrolling down - whale swims down
+          dockerWhale.style.transform = `translateY(${scrollPercent * 0.5}px) rotate(5deg) scaleX(-1)`;
+        } else {
+          // Scrolling up - whale swims up
+          dockerWhale.style.transform = `translateY(${scrollPercent * 0.5}px) rotate(-5deg) scaleX(-1)`;
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
+    </script>
   </body>
 </html>
