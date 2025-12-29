@@ -339,7 +339,7 @@ layout: default
     <div class="card-content">
       <h3 class="card-title">Let's Work Together</h3>
       <p>Interested in collaborating or discussing data engineering opportunities?</p>
-      <a href="mailto:luthfi.r.meza@gmail.com" class="cta-button">Get in Touch</a>
+      <a href="mailto:luthfirdty@gmail.com" class="cta-button">Get in Touch</a>
     </div>
   </div>
 
