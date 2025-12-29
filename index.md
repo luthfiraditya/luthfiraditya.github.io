@@ -2,505 +2,386 @@
 layout: default
 ---
 
-<div class="tech-animals">
-  <!-- Docker Whale -->
-  <div class="docker-whale animal-icon" data-name="Docker">
-    <svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/>
-    </svg>
-    <span class="tooltip">Docker</span>
+<!-- Bento Grid Portfolio Layout -->
+<div class="bento-container">
+
+  <!-- Hero Card - Large -->
+  <div class="bento-card hero-card" data-size="large">
+    <div class="card-content">
+      <div class="status-badge">● Available for opportunities</div>
+      <h1 class="hero-name">Luthfi Raditya Meza</h1>
+      <p class="hero-role">Data Engineer</p>
+      <p class="hero-tagline">Architecting scalable data platforms & lakehouse solutions on Cloud</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">AWS</span>
+          <span class="stat-label">Certified</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- Python Snake -->
-  <div class="python-snake animal-icon hidden" data-name="Python">
-    <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/>
-    </svg>
-    <span class="tooltip">Python</span>
+  <!-- About Card - Wide -->
+  <div class="bento-card about-card" data-size="wide">
+    <div class="card-content">
+      <h3 class="card-title">About</h3>
+      <p>Data Engineer with 3+ years of experience specializing in cloud data engineering, lakehouse architectures, and enterprise-scale ETL/ELT pipelines.</p>
+      <p>Passionate about transforming complex data challenges into scalable, governed solutions that drive analytics and AI innovation.</p>
+    </div>
   </div>
 
-  <!-- PostgreSQL Elephant -->
-  <div class="postgres-elephant animal-icon hidden" data-name="PostgreSQL">
-    <svg viewBox="0 0 432.071 445.383" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" d="M323.205 324.227c2.833-23.601 1.984-27.062 19.563-23.239l4.463.392c13.517.615 31.199-2.174 41.587-7 22.362-10.376 35.622-27.7 13.572-23.148-50.297 10.376-53.755-6.655-53.755-6.655 53.111-78.803 75.313-178.836 56.149-203.322-52.27-66.789-142.752-35.2-144.262-34.38l-.486.089c-9.938-2.062-21.06-3.294-33.554-3.496-22.761-.374-40.032 5.967-53.133 15.904 0 0-161.408-66.498-153.899 83.628 1.597 31.936 45.777 241.655 98.47 178.31 19.259-23.163 37.871-42.748 37.871-42.748 9.242 6.14 20.307 9.272 31.912 8.147l.897-.765c-.281 2.876-.157 5.689.359 9.019-13.572 15.167-9.584 17.83-36.723 23.416-27.457 5.659-11.326 15.734-.797 18.367 12.768 3.193 42.305 7.716 62.268-20.224l-.795 3.188c5.325 4.26 4.965 30.619 5.72 49.452.756 18.834 2.017 36.409 5.856 46.771 3.839 10.36 8.369 37.05 44.036 29.406 29.809-6.388 52.6-15.582 54.677-101.107"/>
-    </svg>
-    <span class="tooltip">PostgreSQL</span>
+  <!-- Tech Stack Card - Wide -->
+  <div class="bento-card tech-card" data-size="wide">
+    <div class="card-content">
+      <h3 class="card-title">Technologies</h3>
+      <div class="tech-grid">
+        <span class="tech-item">Python</span>
+        <span class="tech-item">AWS</span>
+        <span class="tech-item">Snowflake</span>
+        <span class="tech-item">Databricks</span>
+        <span class="tech-item">Airflow</span>
+        <span class="tech-item">PostgreSQL</span>
+        <span class="tech-item">Iceberg</span>
+        <span class="tech-item">Docker</span>
+      </div>
+    </div>
   </div>
 
-  <!-- Hadoop Elephant -->
-  <div class="hadoop-elephant animal-icon hidden" data-name="Hadoop">
-    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" d="M478.9 96.4c-28.7-28.7-67.2-44.5-108.4-44.5s-79.7 15.8-108.4 44.5L114.3 244.2c-28.7 28.7-44.5 67.2-44.5 108.4s15.8 79.7 44.5 108.4c28.7 28.7 67.2 44.5 108.4 44.5 41.2 0 79.7-15.8 108.4-44.5L478.9 313c28.7-28.7 44.5-67.2 44.5-108.4s-15.8-79.7-44.5-108.4zm-56.6 160.2L274.5 404.4c-17.2 17.2-40.2 26.7-64.7 26.7s-47.5-9.5-64.7-26.7c-17.2-17.2-26.7-40.2-26.7-64.7s9.5-47.5 26.7-64.7L293 127.2c17.2-17.2 40.2-26.7 64.7-26.7s47.5 9.5 64.7 26.7c17.2 17.2 26.7 40.2 26.7 64.7s-9.6 47.5-26.8 64.7z"/>
-    </svg>
-    <span class="tooltip">Hadoop</span>
+  <!-- Experience Section Title - Full Width -->
+  <div class="section-divider" data-size="full">
+    <h2 class="section-title">Experience</h2>
   </div>
 
-  <!-- MongoDB Leaf (close enough to animal theme) -->
-  <div class="mongo-leaf animal-icon hidden" data-name="MongoDB">
-    <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 448c-110.28 0-200-89.72-200-200S137.72 56 248 56s200 89.72 200 200-89.72 200-200 200z"/>
-      <circle fill="currentColor" cx="248" cy="152" r="48"/>
-      <path fill="currentColor" d="M248 224c-53.02 0-96 42.98-96 96 0 35.84 19.88 67.13 49.19 83.57L224 448v16h48v-16l22.81-44.43C324.12 387.13 344 355.84 344 320c0-53.02-42.98-96-96-96z"/>
-    </svg>
-    <span class="tooltip">MongoDB</span>
+  <!-- Insignia Experience - Extra Wide -->
+  <div class="bento-card work-detail-card insignia-card" data-size="x-wide">
+    <div class="card-content">
+      <div class="work-header">
+        <div>
+          <div class="company-badge current">Current</div>
+          <h3 class="card-title">Data Engineer</h3>
+          <p class="company-name">Insignia</p>
+          <p class="work-duration">Apr 2025 - Present • Jakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <div class="work-summary">
+        <p>Leading end-to-end modernization of legacy big data ecosystem to AWS cloud platform. Architected data lakehouse using Apache Iceberg, engineered event-driven ETL/ELT pipelines, and established comprehensive data governance framework with Lake Formation.</p>
+      </div>
+
+      <div class="work-details">
+        <h4 class="subsection-title">Key Achievements</h4>
+        <ul class="work-highlights">
+          <li>Spearheaded the end-to-end modernization of a legacy big data ecosystem to a scalable AWS cloud platform, enhancing data accessibility for enterprise-wide analytics and significantly reducing operational overhead</li>
+          <li>Led multiple projects related to the client Unified Data Platform, including data standardization, metadata centralization, cross-domain ingestion pipelines, and a unified schema framework for analytics and AI teams</li>
+          <li>Architected and deployed a data lakehouse solution using Apache Iceberg on S3, establishing a transactional, governed data foundation that supports both business intelligence and advanced analytics</li>
+          <li>Created a modern, scalable data lake specifically designed to support network anomaly detection, including structured log storage, standardized schemas, and optimized access patterns for machine learning workloads</li>
+          <li>Engineered robust, event-driven ETL/ELT pipelines using AWS Glue, Lambda, and Airflow to ingest and process complex data from diverse sources, including SQL, NoSQL, HDFS, and real-time network feeds</li>
+          <li>Delivered a governed, Medallion-architecture data repository that serves as the single source of truth for business intelligence (Quicksight), ad-hoc querying (Athena), and critical data science initiatives, including network anomaly detection and AI-powered chatbots</li>
+          <li>Established a robust data governance and operations framework using AWS Lake Formation and CloudWatch, delivering a centralized data catalog, data lineage, and fine-grained access controls for all enterprise data assets</li>
+          <li>Engineered a comprehensive ingestion framework using AWS Glue, DMS, and Kinesis to unify batch, streaming, and change-data-capture (CDC) from diverse enterprise sources, including Oracle, SQL Server, and SFTP</li>
+          <li>Established a mature CI/CD pipeline with GitHub Actions for automated Glue script deployments and implemented rigorous database performance tuning, which improved development velocity and reduced data processing times</li>
+        </ul>
+      </div>
+
+      <button class="expand-button" data-company="insignia">
+        <span class="expand-text">Show Details</span>
+        <span class="expand-icon">↓</span>
+      </button>
+
+      <div class="tech-tags">
+        <span>AWS Glue</span>
+        <span>S3</span>
+        <span>Athena</span>
+        <span>Lake Formation</span>
+        <span>Lambda</span>
+        <span>Airflow</span>
+        <span>Iceberg</span>
+        <span>Python</span>
+        <span>GitHub Actions</span>
+        <span>Snowflake</span>
+        <span>Databricks</span>
+      </div>
+
+      <div class="skills-tags">
+        <span>ETL/ELT</span>
+        <span>Lakehouse Architecture</span>
+        <span>CDC</span>
+        <span>Data Governance</span>
+        <span>Orchestration</span>
+        <span>Cloud Engineering</span>
+      </div>
+    </div>
   </div>
 
-  <!-- Redis (using a simplified icon) -->
-  <div class="redis-icon animal-icon hidden" data-name="Redis">
-    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" d="M510.5 225.5c-3.5-11.8-15.4-21.5-34.5-28.3-3.5-1.2-7.1-2.4-10.9-3.5 7.1-2.9 13.4-5.9 18.6-8.9 18.5-10.4 28.7-23.2 28.7-36.1 0-26.3-50.2-50.9-126.4-61.9C348 77.9 303.5 74 256 74s-92 3.9-130 10.8C49.8 95.8-.4 120.4-.4 146.7c0 12.9 10.2 25.7 28.7 36.1 5.2 3 11.5 6 18.6 8.9-3.8 1.1-7.4 2.3-10.9 3.5-19.1 6.8-31 16.5-34.5 28.3-3.1 10.5-1.4 21.7 4.8 31.5 5.7 9 14.7 16.1 26.8 21.1 1.4.6 2.8 1.2 4.3 1.7-1.5.6-2.9 1.2-4.3 1.8-12.1 5-21.1 12.1-26.8 21.1-6.2 9.8-7.9 21-4.8 31.5 3.5 11.8 15.4 21.5 34.5 28.3 3.5 1.2 7.1 2.4 10.9 3.5-7.1 2.9-13.4 5.9-18.6 8.9C10.2 380.3 0 393.1 0 406c0 26.3 50.2 50.9 126.4 61.9C164 476.8 208.5 480 256 480s92-3.2 130-11.1C462.2 457.9 512 433.3 512 407c0-12.9-10.2-25.7-28.7-36.1-5.2-3-11.5-6-18.6-8.9 3.8-1.1 7.4-2.3 10.9-3.5 19.1-6.8 31-16.5 34.5-28.3 3.1-10.5 1.4-21.7-4.8-31.5-5.7-9-14.7-16.1-26.8-21.1-1.4-.6-2.8-1.2-4.3-1.8 1.5-.5 2.9-1.1 4.3-1.7 12.1-5 21.1-12.1 26.8-21.1 6.2-9.8 7.9-21 4.8-31.5z"/>
-    </svg>
-    <span class="tooltip">Redis</span>
+  <!-- NTX Experience - Extra Wide -->
+  <div class="bento-card work-detail-card ntx-card" data-size="x-wide">
+    <div class="card-content">
+      <div class="work-header">
+        <div>
+          <div class="company-badge previous">2023-2025</div>
+          <h3 class="card-title">Data Engineer</h3>
+          <p class="company-name">NTX Solusi Teknologi</p>
+          <p class="work-duration">Dec 2023 - Mar 2025 • Jakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <div class="work-summary">
+        <p>Architected ETL/CDC pipelines with MinIO and Prefect orchestration. Improved search relevance by 35% with vector search, launched production LLM solution reducing report creation time by 90%, and implemented data catalog solutions reducing retrieval times by 50%.</p>
+      </div>
+
+      <div class="work-details">
+        <h4 class="subsection-title">Key Achievements</h4>
+        <ul class="work-highlights">
+          <li>Architected and optimized ETL/CDC pipelines and data lake implementation using MinIO, while orchestrating workflows with Prefect to ensure smooth and scalable data processes</li>
+          <li>Enhanced data reliability by integrating validation tools like Great Expectations, detecting and resolving 95% of data anomalies before ingestion</li>
+          <li>Designed and maintained normalized and denormalized data models in PostgreSQL and MongoDB to support analytical dashboards and machine learning workflows</li>
+          <li>Implemented a scalable data lake solution, ensuring efficient storage and retrieval of structured and unstructured data</li>
+          <li>Improved search relevance by 35% by developing and deploying a high-performance vector search system using HNSW</li>
+          <li>Achieved 95% accuracy in Named Entity Recognition (NER) models for automated report generation through MLOps practices, including experiment tracking, model registry, and monitoring</li>
+          <li>Launched a production-grade Large Language Model (LLM) solution that reduced client report creation time by 90%, enhancing operational efficiency</li>
+          <li>Boosted system reliability by implementing CI/CD pipelines and introducing monitoring solutions via Prometheus and Grafana, achieving 90% uptime</li>
+          <li>Established standardized data engineering workflows and documentation, enhancing team productivity by 40% and cutting project delays by 25%</li>
+          <li>Implemented data catalog solutions such as Amundsen and DataHub to enhance data discovery, reducing data retrieval times by 50% and increasing data compliance by 35%</li>
+          <li>Fostered a culture of continuous innovation by experimenting with emerging technologies, leading to a 20% annual improvement in operational efficiency and a 60% rise in tech adoption</li>
+        </ul>
+      </div>
+
+      <button class="expand-button" data-company="ntx">
+        <span class="expand-text">Show Details</span>
+        <span class="expand-icon">↓</span>
+      </button>
+
+      <div class="tech-tags">
+        <span>Prefect</span>
+        <span>PostgreSQL</span>
+        <span>MongoDB</span>
+        <span>MinIO</span>
+        <span>Docker</span>
+        <span>FastAPI</span>
+        <span>MLFlow</span>
+        <span>Airbyte</span>
+        <span>Amundsen</span>
+        <span>DataHub</span>
+        <span>DSPy</span>
+        <span>Langchain</span>
+        <span>Great Expectations</span>
+        <span>LakeFS</span>
+        <span>Redis</span>
+        <span>Elasticsearch</span>
+      </div>
+
+      <div class="skills-tags">
+        <span>ETL</span>
+        <span>Change Data Capture</span>
+        <span>Data Orchestration</span>
+        <span>Data Warehousing</span>
+        <span>Data Governance</span>
+        <span>AI</span>
+        <span>MLOps</span>
+        <span>LLM</span>
+      </div>
+    </div>
   </div>
+
+  <!-- PERGA Experience - Wide -->
+  <div class="bento-card work-detail-card perga-card" data-size="wide">
+    <div class="card-content">
+      <div class="work-header">
+        <div>
+          <div class="company-badge ai">AI Engineer</div>
+          <h3 class="card-title">AI Engineer</h3>
+          <p class="company-name">PERGA</p>
+          <p class="work-duration">Mar 2023 - Jun 2023 • Hamburg, Germany (Remote)</p>
+        </div>
+      </div>
+
+      <div class="work-summary">
+        <p>Developed NER and document classification solutions using LayoutLM achieving 92% accuracy. Configured Label Studio for data labeling, successfully labeled 200+ documents, and spearheaded creation of 3 main AI features for the application.</p>
+      </div>
+
+      <div class="work-details">
+        <h4 class="subsection-title">Key Achievements</h4>
+        <ul class="work-highlights">
+          <li>Developed solutions for Named Entity Recognition (NER) and document classification using the concepts from the LayoutLM paper, achieving an impressive accuracy rate of 92% at the first checkpoint</li>
+          <li>Devised and implemented a rule-based approach for Named Entity Recognition, enhancing the precision and efficiency of entity recognition tasks</li>
+          <li>Conducted extensive research on document-based AI models for 2 AI models on apps, generating valuable insights that contributed to the company's advancements in this domain</li>
+          <li>Configured Label Studio to streamline data labeling processes and successfully labeled 200+ company document data</li>
+          <li>Spearheaded the creation of 3 main AI features for the application, significantly elevating its overall functionality</li>
+          <li>Collaborated with universities on the preparation of review papers, fostering productive partnerships and knowledge exchange in model development. Engaged in 2 model feature discussions with universities</li>
+        </ul>
+      </div>
+
+      <button class="expand-button" data-company="perga">
+        <span class="expand-text">Show Details</span>
+        <span class="expand-icon">↓</span>
+      </button>
+
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>PyTorch</span>
+        <span>Label Studio</span>
+        <span>LayoutLM</span>
+      </div>
+
+      <div class="skills-tags">
+        <span>Named Entity Recognition</span>
+        <span>NLP</span>
+        <span>Document Classification</span>
+        <span>Data Labeling</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SG-EDTS Experience - Wide -->
+  <div class="bento-card work-detail-card intern-card" data-size="wide">
+    <div class="card-content">
+      <div class="work-header">
+        <div>
+          <div class="company-badge intern">Internship</div>
+          <h3 class="card-title">Data Science & Analytics Intern</h3>
+          <p class="company-name">SG-EDTS</p>
+          <p class="work-duration">Jan 2022 - Apr 2022 • Jakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <div class="work-summary">
+        <p>Completed 4 data science & analytics courses with hands-on experience. Designed e-commerce recommendation system using SVD++ achieving MSE 0.844 and MAE 0.384. Constructed 3 business performance dashboards using Tableau.</p>
+      </div>
+
+      <div class="work-details">
+        <h4 class="subsection-title">Key Achievements</h4>
+        <ul class="work-highlights">
+          <li>Completed 4 data science & analytics courses and gained hands-on experience in production environments</li>
+          <li>Researched state-of-the-art machine learning algorithms from research papers and implemented them in practical applications</li>
+          <li>Designed, developed, and implemented a client (e-commerce) recommendation system model using the SVD++ model, achieving an MSE score of 0.844 and an MAE score of 0.384</li>
+          <li>Constructed and fine-tuned 3 business performance dashboards with scope analysis using Tableau, providing actionable insights for stakeholders</li>
+        </ul>
+      </div>
+
+      <button class="expand-button" data-company="intern">
+        <span class="expand-text">Show Details</span>
+        <span class="expand-icon">↓</span>
+      </button>
+
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>Tableau</span>
+        <span>BigQuery</span>
+        <span>Excel</span>
+        <span>MLFlow</span>
+      </div>
+
+      <div class="skills-tags">
+        <span>Recommendation Systems</span>
+        <span>Machine Learning</span>
+        <span>Data Visualization</span>
+        <span>EDA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education Card - Wide -->
+  <div class="bento-card education-card" data-size="wide">
+    <div class="card-content">
+      <h3 class="card-title">Education</h3>
+      <div class="edu-item">
+        <h4>Information Systems</h4>
+        <p>Universitas Airlangga</p>
+        <p class="edu-gpa">GPA 3.53/4.00</p>
+        <p class="edu-year">2019 - 2023</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievement Card - Wide -->
+  <div class="bento-card education-card" data-size="wide">
+    <div class="card-content">
+      <h3 class="card-title">Achievement</h3>
+      <div class="cert-item">
+        <h4>AWS Certified Data Engineer</h4>
+        <p class="cert-issuer">Amazon Web Services</p>
+        <p class="cert-validity">Valid until Aug 2028</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Links Card - Wide -->
+  <div class="bento-card links-card" data-size="wide">
+    <div class="card-content">
+      <h3 class="card-title">Connect</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/luthfiraditya/" target="_blank" class="social-link">
+          <span class="icon">in</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/luthfiraditya" target="_blank" class="social-link">
+          <span class="icon">gh</span>
+          <span>GitHub</span>
+        </a>
+        <a href="https://medium.com/@luthfirdty" target="_blank" class="social-link">
+          <span class="icon">m</span>
+          <span>Medium</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact CTA Card - Wide -->
+  <div class="bento-card cta-card" data-size="wide">
+    <div class="card-content">
+      <h3 class="card-title">Let's Work Together</h3>
+      <p>Interested in collaborating or discussing data engineering opportunities?</p>
+      <a href="mailto:luthfi.r.meza@gmail.com" class="cta-button">Get in Touch</a>
+    </div>
+  </div>
+
 </div>
 
-<div class="hero-section">
-  <div class="floating-particles">
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-  </div>
-  <div class="terminal-header">
-    <div class="terminal-dots">
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-    </div>
-    <div class="terminal-title">~/luthfi-raditya</div>
-    <div class="sparkles">
-      <span class="sparkle">✨</span>
-      <span class="sparkle">✨</span>
-      <span class="sparkle">✨</span>
-    </div>
-  </div>
-  <div class="hero-content">
-    <div class="hero-prefix">$</div>
-    <h1 class="hero-title">
-      <span class="typing-text">whoami</span>
-      <span class="cursor">_</span>
-    </h1>
-    <div class="output-section">
-      <div class="output-line">
-        <span class="label">Name:</span>
-        <span class="value glow-text">Luthfi Raditya Meza</span>
-      </div>
-      <div class="output-line">
-        <span class="label">Role:</span>
-        <span class="value highlight-text">Data Engineer</span>
-      </div>
-      <div class="output-line">
-        <span class="label">Status:</span>
-        <span class="value cert-badge">AWS Certified</span>
-      </div>
-      <div class="output-line">
-        <span class="label">Focus:</span>
-        <span class="value">Lakehouse Architecture • ETL/ELT Pipelines • Cloud Data Platforms</span>
-      </div>
-      <div class="output-line experience-line">
-        <span class="label">Experience:</span>
-        <span class="value">3+ years transforming raw data into business intelligence</span>
-      </div>
-    </div>
-    <div class="hero-command-line">
-      <span class="prompt">$</span>
-      <span class="command">cat skills.txt</span>
-      <span class="cursor blink">_</span>
-    </div>
-  </div>
-</div>
+<script>
+// Toggle work experience details
+document.querySelectorAll('.expand-button').forEach(button => {
+  const card = button.closest('.work-detail-card');
+  const details = card.querySelector('.work-details');
+  const expandText = button.querySelector('.expand-text');
+  const expandIcon = button.querySelector('.expand-icon');
 
----
+  // Initially hide details
+  details.style.display = 'none';
+  details.style.maxHeight = '0';
+  details.style.overflow = 'hidden';
+  details.style.transition = 'max-height 0.4s cubic-bezier(0.28, 0.11, 0.32, 1), opacity 0.3s ease';
+  details.style.opacity = '0';
 
-## About Me
+  button.addEventListener('click', function() {
+    const isExpanded = details.style.maxHeight !== '0px' && details.style.maxHeight !== '';
 
-AWS Certified Data Engineer with a proven track record of designing and implementing enterprise-scale data platforms. I specialize in **cloud data engineering, ETL/ELT pipelines, and lakehouse architectures**—transforming complex data challenges into scalable, production-ready solutions.
-
-From architecting **modern data lakehouses using Apache Iceberg** to building **real-time CDC pipelines** serving analytics teams, I focus on creating robust data infrastructure that empowers data-driven decision making.
-
-**Key Expertise:**
-
-- ☁️ Cloud Data Engineering (AWS Glue, S3, Athena, Lake Formation, Redshift)
-- 🏗️ Lakehouse Architecture (Apache Iceberg, Delta Lake, Medallion Architecture)
-- 🔄 ETL/ELT & Data Orchestration (Airflow, Prefect, AWS Step Functions)
-- 🗄️ Data Governance & Cataloging (Lake Formation, Amundsen, DataHub)
-- 🤖 ML/AI Data Pipelines (MLOps, LLM Infrastructure, Vector Search)
-
-<div class="stats-container">
-  <div class="stat-box">
-    <div class="stat-number">3+</div>
-    <div class="stat-label">Years Experience</div>
-  </div>
-  <div class="stat-box">
-    <div class="stat-number">AWS</div>
-    <div class="stat-label">Certified DE</div>
-  </div>
-  <div class="stat-box">
-    <div class="stat-number">40%</div>
-    <div class="stat-label">Team Productivity Gain</div>
-  </div>
-</div>
-
----
-
-## Work Experience
-
-<div class="timeline">
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="timeline-header">
-        <h3>Mid. Data Engineer</h3>
-        <span class="company">Insignia</span>
-        <span class="duration">Apr 2025 - Present</span>
-      </div>
-      <p class="role-description">Leading enterprise data platform modernization and lakehouse architecture implementation</p>
-
-      <p><strong>Key Achievements:</strong></p>
-      <ul>
-        <li>Spearheaded <strong>end-to-end modernization of legacy big data ecosystem to AWS cloud platform</strong>, significantly reducing operational overhead and enhancing data accessibility for enterprise-wide analytics</li>
-        <li>Architected and deployed <strong>data lakehouse solution using Apache Iceberg on S3</strong>, establishing a transactional, governed data foundation supporting both BI and advanced analytics</li>
-        <li>Engineered <strong>robust event-driven ETL/ELT pipelines</strong> using AWS Glue, Lambda, and Airflow to process complex data from SQL, NoSQL, HDFS, and real-time network feeds</li>
-        <li>Delivered <strong>governed Medallion-architecture data repository</strong> serving as single source of truth for QuickSight dashboards, Athena queries, and AI initiatives including network anomaly detection</li>
-        <li>Established <strong>comprehensive data governance framework</strong> using Lake Formation and CloudWatch, delivering centralized catalog, data lineage, and fine-grained access controls</li>
-        <li>Implemented <strong>mature CI/CD pipeline with GitHub Actions</strong> for automated Glue script deployments, improving development velocity</li>
-      </ul>
-
-      <div class="tech-stack">
-        <span class="tech-tag">AWS Glue</span>
-        <span class="tech-tag">S3</span>
-        <span class="tech-tag">Athena</span>
-        <span class="tech-tag">Lake Formation</span>
-        <span class="tech-tag">Lambda</span>
-        <span class="tech-tag">Airflow</span>
-        <span class="tech-tag">Apache Iceberg</span>
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">GitHub Actions</span>
-        <span class="tech-tag">Snowflake</span>
-        <span class="tech-tag">Databricks</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="timeline-header">
-        <h3>Data Engineer</h3>
-        <span class="company">NTX Solusi Teknologi</span>
-        <span class="duration">Dec 2023 - Mar 2025</span>
-      </div>
-      <p class="role-description">Built scalable data infrastructure and ML pipelines supporting analytics and AI initiatives</p>
-
-      <p><strong>Key Achievements:</strong></p>
-      <ul>
-        <li>Architected and optimized <strong>ETL/CDC pipelines and data lake implementation using MinIO</strong>, orchestrating workflows with Prefect for scalable data processes</li>
-        <li>Enhanced data reliability by integrating <strong>Great Expectations for validation</strong>, detecting and resolving <strong>95% of data anomalies</strong> before ingestion</li>
-        <li>Improved search relevance by <strong>35%</strong> by developing and deploying <strong>high-performance vector search system using HNSW</strong></li>
-        <li>Launched <strong>production-grade LLM solution reducing report creation time by 90%</strong>, enhancing operational efficiency</li>
-        <li>Achieved <strong>95% accuracy in NER models</strong> for automated report generation through MLOps practices including experiment tracking and monitoring</li>
-        <li>Boosted system reliability by implementing <strong>CI/CD pipelines and monitoring via Prometheus/Grafana</strong>, achieving <strong>90% uptime</strong></li>
-        <li>Implemented <strong>data catalog solutions (Amundsen, DataHub)</strong>, reducing data retrieval times by <strong>50%</strong> and increasing compliance by <strong>35%</strong></li>
-        <li>Established standardized workflows and documentation, enhancing <strong>team productivity by 40%</strong> and cutting project delays by <strong>25%</strong></li>
-      </ul>
-
-      <div class="tech-stack">
-        <span class="tech-tag">Prefect</span>
-        <span class="tech-tag">PostgreSQL</span>
-        <span class="tech-tag">MongoDB</span>
-        <span class="tech-tag">MinIO</span>
-        <span class="tech-tag">Docker</span>
-        <span class="tech-tag">FastAPI</span>
-        <span class="tech-tag">MLFlow</span>
-        <span class="tech-tag">Airbyte</span>
-        <span class="tech-tag">Amundsen</span>
-        <span class="tech-tag">LangChain</span>
-        <span class="tech-tag">Great Expectations</span>
-        <span class="tech-tag">ElasticSearch</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="timeline-header">
-        <h3>AI Engineer</h3>
-        <span class="company">PERGA (Remote - Hamburg, Germany)</span>
-        <span class="duration">Mar 2023 - Jun 2023</span>
-      </div>
-      <p class="role-description">Developed document AI solutions and NLP models for production applications</p>
-
-      <p><strong>Key Achievements:</strong></p>
-      <ul>
-        <li>Developed <strong>NER and document classification solutions using LayoutLM</strong>, achieving <strong>92% accuracy</strong> at first checkpoint</li>
-        <li>Spearheaded creation of <strong>3 main AI features</strong> for the application, significantly elevating functionality</li>
-        <li>Configured <strong>Label Studio</strong> to streamline data labeling processes, successfully labeling <strong>200+ company documents</strong></li>
-        <li>Conducted extensive research on document-based AI models, generating valuable insights for company advancements</li>
-        <li>Collaborated with universities on review paper preparation and model development discussions</li>
-      </ul>
-
-      <div class="tech-stack">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">PyTorch</span>
-        <span class="tech-tag">LayoutLM</span>
-        <span class="tech-tag">NLP</span>
-        <span class="tech-tag">Label Studio</span>
-        <span class="tech-tag">Named Entity Recognition</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <div class="timeline-header">
-        <h3>Data Science and Analytics Intern</h3>
-        <span class="company">SG-EDTS</span>
-        <span class="duration">Jan 2022 - Apr 2022</span>
-      </div>
-      <p class="role-description">Built recommendation systems and analytics dashboards for e-commerce clients</p>
-
-      <p><strong>Key Achievements:</strong></p>
-      <ul>
-        <li>Designed and implemented <strong>e-commerce recommendation system using SVD++ model</strong>, achieving <strong>MSE: 0.844</strong> and <strong>MAE: 0.384</strong></li>
-        <li>Constructed and fine-tuned <strong>3 business performance dashboards</strong> with scope analysis using Tableau</li>
-        <li>Researched state-of-the-art machine learning algorithms from research papers</li>
-        <li>Completed 4 data science & analytics courses with hands-on experience</li>
-      </ul>
-
-      <div class="tech-stack">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">Tableau</span>
-        <span class="tech-tag">BigQuery</span>
-        <span class="tech-tag">MLFlow</span>
-        <span class="tech-tag">Recommendation Systems</span>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-
-## Featured Projects
-
-<div class="projects-grid">
-  <div class="project-card">
-    <div class="project-header">
-      <h3>Session-based Recommendation System</h3>
-      <span class="project-type">Bachelor's Thesis</span>
-    </div>
-    <p class="project-subtitle">Advanced Graph Neural Network Implementation for E-commerce</p>
-    <p>Developed a novel recommendation architecture using <strong>Gated Graph Neural Networks with attention mechanisms</strong> for session-based recommendations on e-commerce datasets.</p>
-    <p><strong>Impact:</strong> Research-grade innovation applicable to real-world e-commerce platforms, demonstrating state-of-the-art performance in session-based recommendations.</p>
-    <div class="tech-stack">
-      <span class="tech-tag">PyTorch</span>
-      <span class="tech-tag">Graph Neural Networks</span>
-      <span class="tech-tag">Deep Learning</span>
-      <span class="tech-tag">Recommendation Systems</span>
-    </div>
-    <a href="https://github.com/luthfiraditya/Session-based-Recommendation-System" target="_blank" class="project-link">View on GitHub →</a>
-  </div>
-
-  <div class="project-card">
-    <div class="project-header">
-      <h3>Document AI with LayoutLM</h3>
-      <span class="project-type">Computer Vision + NLP</span>
-    </div>
-    <p class="project-subtitle">Multimodal AI for Document Understanding</p>
-    <p>Built intelligent document processing system combining NLP and computer vision to extract structured information from unstructured documents. Implemented both <strong>Named Entity Recognition and Document Classification</strong> using LayoutLM.</p>
-    <p><strong>Impact:</strong> Foundation technology for automated document processing and information extraction in production environments.</p>
-    <div class="tech-stack">
-      <span class="tech-tag">LayoutLM</span>
-      <span class="tech-tag">Transformers</span>
-      <span class="tech-tag">Computer Vision</span>
-      <span class="tech-tag">NLP</span>
-      <span class="tech-tag">OCR</span>
-    </div>
-    <a href="https://github.com/luthfiraditya/LayoutLM-Document-Classification" target="_blank" class="project-link">View on GitHub →</a>
-  </div>
-
-  <div class="project-card">
-    <div class="project-header">
-      <h3>Market Basket Analysis</h3>
-      <span class="project-type">Production ML Pipeline</span>
-    </div>
-    <p class="project-subtitle">End-to-End Recommendation Engine</p>
-    <p>Analyzed <strong>3M+ grocery orders from 200K+ users</strong> using advanced ML techniques, achieving <strong>0.83 AUC</strong> for next-purchase prediction with XGBoost. Implemented customer segmentation and affinity analysis for cross-selling optimization.</p>
-    <p><strong>Impact:</strong> Scalable solution for product recommendations and customer targeting strategies.</p>
-    <div class="tech-stack">
-      <span class="tech-tag">XGBoost</span>
-      <span class="tech-tag">Python</span>
-      <span class="tech-tag">Big Data</span>
-      <span class="tech-tag">Feature Engineering</span>
-    </div>
-    <a href="https://github.com/luthfiraditya/Market-Basket-Analysis" target="_blank" class="project-link">View on GitHub →</a>
-  </div>
-
-  <div class="project-card">
-    <div class="project-header">
-      <h3>E-Commerce Business Performance Analytics</h3>
-      <span class="project-type">Data Analytics</span>
-    </div>
-    <p class="project-subtitle">Comprehensive Business Intelligence Dashboard</p>
-    <p>Built end-to-end analytics solution analyzing Olist e-commerce performance during 2017-2018, focusing on orders, transactions, and business metrics visualization using Tableau.</p>
-    <p><strong>Impact:</strong> Delivered actionable insights for business strategy and operational improvements.</p>
-    <div class="tech-stack">
-      <span class="tech-tag">Tableau</span>
-      <span class="tech-tag">SQL</span>
-      <span class="tech-tag">Python</span>
-      <span class="tech-tag">Business Intelligence</span>
-    </div>
-    <div style="margin-top: 0.5rem;">
-      <a href="https://luthfirdty.medium.com/olist-e-commerce-business-performance-5ce0b3dc66fb" target="_blank" class="project-link" style="margin-right: 1rem;">Read Article →</a>
-      <a href="https://github.com/luthfiraditya/Olist-E-Commerce-Business-Performance" target="_blank" class="project-link">View on GitHub →</a>
-    </div>
-  </div>
-</div>
-
----
-
-## Technical Skills
-
-<div class="skills-section">
-  <div class="skill-category">
-    <h4>Cloud & Data Platforms</h4>
-    <div class="tech-stack">
-      <span class="tech-tag">AWS Glue</span>
-      <span class="tech-tag">AWS Redshift</span>
-      <span class="tech-tag">AWS Athena</span>
-      <span class="tech-tag">AWS S3</span>
-      <span class="tech-tag">AWS Lambda</span>
-      <span class="tech-tag">Lake Formation</span>
-      <span class="tech-tag">Snowflake</span>
-      <span class="tech-tag">Databricks</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <h4>Data Lake & Lakehouse Technologies</h4>
-    <div class="tech-stack">
-      <span class="tech-tag">Apache Iceberg</span>
-      <span class="tech-tag">Delta Lake</span>
-      <span class="tech-tag">DuckDB</span>
-      <span class="tech-tag">MinIO</span>
-      <span class="tech-tag">LakeFS</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <h4>Pipelines & Orchestration</h4>
-    <div class="tech-stack">
-      <span class="tech-tag">Apache Airflow</span>
-      <span class="tech-tag">Prefect</span>
-      <span class="tech-tag">AWS Step Functions</span>
-      <span class="tech-tag">AWS EventBridge</span>
-      <span class="tech-tag">Airbyte</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <h4>Databases & Storage</h4>
-    <div class="tech-stack">
-      <span class="tech-tag">PostgreSQL</span>
-      <span class="tech-tag">MongoDB</span>
-      <span class="tech-tag">Redis</span>
-      <span class="tech-tag">ElasticSearch</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <h4>Data Governance & Quality</h4>
-    <div class="tech-stack">
-      <span class="tech-tag">Great Expectations</span>
-      <span class="tech-tag">Amundsen</span>
-      <span class="tech-tag">DataHub</span>
-      <span class="tech-tag">AWS Lake Formation</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <h4>ML/AI & Analytics</h4>
-    <div class="tech-stack">
-      <span class="tech-tag">MLFlow</span>
-      <span class="tech-tag">TensorFlow</span>
-      <span class="tech-tag">PyTorch</span>
-      <span class="tech-tag">LangChain</span>
-      <span class="tech-tag">DSPy</span>
-      <span class="tech-tag">Power BI</span>
-      <span class="tech-tag">Tableau</span>
-    </div>
-  </div>
-
-  <div class="skill-category">
-    <h4>Development & DevOps</h4>
-    <div class="tech-stack">
-      <span class="tech-tag">Python</span>
-      <span class="tech-tag">Git</span>
-      <span class="tech-tag">Docker</span>
-      <span class="tech-tag">GitHub Actions</span>
-      <span class="tech-tag">FastAPI</span>
-      <span class="tech-tag">Prometheus</span>
-      <span class="tech-tag">Grafana</span>
-    </div>
-  </div>
-</div>
-
----
-
-## Education & Certifications
-
-<div class="education-section">
-  <div class="education-item">
-    <h3>Bachelor of Information System</h3>
-    <p class="institution">Universitas Airlangga, Surabaya</p>
-    <p class="gpa">GPA: 3.53/4.00</p>
-    <p class="duration">Aug 2019 - Aug 2023</p>
-    <p class="details">Thesis: Session-based Recommendation System using Gated Graph Neural Network and Attention Mechanism on E-commerce Dataset</p>
-  </div>
-</div>
-
-<div class="certifications-section">
-  <h3>Certifications & Achievements</h3>
-  <ul>
-    <li><strong>AWS Certified Data Engineer - Associate</strong> (Aug 2025 - Aug 2028)</li>
-    <li><strong>Top 5 AI Startup Final Project</strong> - PT. Orbit Future Academy</li>
-    <li><strong>Multiple Data Engineering & ML Certifications</strong> - AWS, Coursera</li>
-  </ul>
-</div>
-
----
-
-## Insights & Writing
-
-I share knowledge about data engineering, cloud architecture, and analytics on Medium.
-
-**Featured Articles:**
-
-- [Olist E-Commerce Business Performance Analysis](https://luthfirdty.medium.com/olist-e-commerce-business-performance-5ce0b3dc66fb)
-- Technical deep-dives on data engineering and ML projects
-- Career insights and lessons learned
-
-[View all articles on Medium →](https://medium.com/@luthfirdty)
-
----
-
-## Let's Connect
-
-I'm always interested in discussing data engineering, cloud architecture, or collaboration opportunities.
-
-<div class="contact-links">
-  <p>
-    📧 <a href="mailto:luthfirdty@gmail.com">luthfirdty@gmail.com</a><br>
-    📱 <a href="tel:+6281316753195">+62 813 1675 3195</a><br>
-    💼 <a href="https://www.linkedin.com/in/luthfiraditya/" target="_blank">LinkedIn</a><br>
-    🐙 <a href="https://github.com/luthfiraditya" target="_blank">GitHub</a><br>
-    ✍️ <a href="https://medium.com/@luthfirdty" target="_blank">Medium</a>
-  </p>
-</div>
-
----
-
-<center class="footer-text">© 2025 Luthfi Raditya Meza. Built with Jekyll.</center>
+    if (isExpanded) {
+      // Collapse
+      details.style.maxHeight = '0';
+      details.style.opacity = '0';
+      setTimeout(() => {
+        details.style.display = 'none';
+      }, 400);
+      expandText.textContent = 'Show Details';
+      expandIcon.textContent = '↓';
+      button.classList.remove('expanded');
+    } else {
+      // Expand
+      details.style.display = 'block';
+      details.style.maxHeight = details.scrollHeight + 'px';
+      details.style.opacity = '1';
+      expandText.textContent = 'Hide Details';
+      expandIcon.textContent = '↑';
+      button.classList.add('expanded');
+    }
+  });
+});
+</script>
