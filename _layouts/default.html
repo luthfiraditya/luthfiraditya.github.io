@@ -2,76 +2,19 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta name="google-site-verification" content="A9a8vuUHafzO8nPcfZRGB04uGKcZc_VLHfeKLjV3mVo" />
-    <title> Portofolio | Luthfi Raditya Meza</title>
+    <title>Luthfi Raditya Meza, Senior Data Engineer</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {% seo %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
+    <div class="page">
       {{ content }}
     </div>
-
-    <script>
-      // Tech Animals - Click to expand/collapse
-      const techAnimals = document.querySelector('.tech-animals');
-      const dockerWhale = document.querySelector('.docker-whale');
-      const animalIcons = document.querySelectorAll('.animal-icon.hidden');
-      let isExpanded = false;
-
-      dockerWhale.addEventListener('click', function(e) {
-        e.stopPropagation();
-        isExpanded = !isExpanded;
-
-        if (isExpanded) {
-          techAnimals.classList.add('expanded');
-          animalIcons.forEach((icon, index) => {
-            setTimeout(() => {
-              icon.classList.remove('hidden');
-            }, index * 100);
-          });
-        } else {
-          techAnimals.classList.remove('expanded');
-          animalIcons.forEach((icon) => {
-            icon.classList.add('hidden');
-          });
-        }
-      });
-
-      // Close when clicking outside
-      document.addEventListener('click', function(e) {
-        if (isExpanded && !techAnimals.contains(e.target)) {
-          isExpanded = false;
-          techAnimals.classList.remove('expanded');
-          animalIcons.forEach((icon) => {
-            icon.classList.add('hidden');
-          });
-        }
-      });
-
-      // Docker Whale scroll animation
-      let lastScrollTop = 0;
-
-      window.addEventListener('scroll', function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const scrollPercent = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-
-        // Move whale up/down based on scroll direction
-        if (scrollTop > lastScrollTop) {
-          // Scrolling down - whale swims down
-          dockerWhale.style.transform = `translateY(${scrollPercent * 0.5}px) rotate(5deg) scaleX(-1)`;
-        } else {
-          // Scrolling up - whale swims up
-          dockerWhale.style.transform = `translateY(${scrollPercent * 0.5}px) rotate(-5deg) scaleX(-1)`;
-        }
-
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-      });
-    </script>
   </body>
 </html>
